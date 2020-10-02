@@ -1,0 +1,374 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 100%;
+   background-color: rgb(201, 201, 201);
+}
+/* Titulos y subtitulos */
+h1 {
+   font-size: 2em;
+   text-align: center;
+   padding-bottom: 15px;
+}
+h2 {
+   font-size: 1.1em;
+   text-align: center;
+   padding-bottom: 10px;
+}
+.text {
+   font-size: 1.0em;
+   line-height: 1.7em;
+}
+.strong {
+   font-size: 1.2;
+   line-height: 1.7em;
+   font-weight: bold;
+}
+
+/* Menu de navegación */
+#check {
+   display: none;
+}
+header {
+   width: 100%;
+   height: 60px;
+   background-color: rgb(4, 4, 94);
+   box-shadow: 0 3px 7px 1px rgb(6, 6, 54);
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+header label {
+   float: right;
+   width: 24px;
+   height: 24px;
+   margin: 18px 15px;
+}
+header label img {
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+}
+#autor {
+   float: left;
+   color: white;
+   padding: 20px 15px;
+}
+.menu {
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   top: 59px;
+   left: 0;
+   background-color: rgb(4, 4, 94);
+   transition: all 0.5s ease;
+   transform: translateX(-100%);
+}
+.menu a {
+   display: block;
+   text-decoration: none;
+   text-align: center;
+   color: white;
+   padding: 20px 15px;
+   border-radius: 5px;
+}
+.menu a:hover {
+   background-color: aquamarine;
+   color: black;
+}
+#check:checked ~ .menu {
+   transform: translateX(0%);
+}
+
+/* Main */
+main {
+   z-index: -1;
+}
+main section {
+   padding-top: 120px;
+   padding-bottom: 100px;
+}
+main .container {
+   margin-top: 35px;
+}
+.icon {
+   width: 24px;
+   height: 24px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.list-icon {
+   display: flex;
+   justify-content: center;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+/* Sección inicio */
+#inicio {
+   width: 100%;
+   height: auto;
+   padding: 0;
+   margin-top: 60px;
+   position: relative;
+}
+#img-inicio {
+   max-width: 100%;
+   height: auto;
+}
+#welcome {
+   width: 100%;
+   height: 50%;
+   position: absolute;
+   left: 0;
+   top: 50%;
+   background-color: rgba(175, 171, 171, 0.3);
+}
+#text-name {
+   font-size: 1.5em;
+   text-align: center;
+   color: rgb(6, 6, 54);
+   font-weight: bold;
+}
+#text-welcome {
+   font-size: 1.3em;
+   text-align: center;
+   color: rgb(6, 6, 54);
+}
+
+/* Sección Bigrafía */
+#about {
+   width: 100%;
+   height: auto;
+   background-color: rgb(4, 4, 94);
+   color: white;
+   padding-left: 10%;
+   padding-right: 10%;
+}
+#about article {
+   display: block;
+}
+#about p {
+   width: 100%;
+   height: auto;
+   margin-bottom: 30px;
+   text-align: justify;
+}
+#about img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 5px;
+   box-shadow: 0 0 7px 3px rgb(3, 3, 39);
+}
+
+/* Estudios */
+#study {
+   width: 100%;
+   height: auto;
+   padding-left: 15%;
+   padding-right: 15%;
+   text-align: center;
+}
+#study article {
+   width: 100%;
+   margin-bottom: 15px;
+   background-color: rgb(185, 184, 184);
+   border-radius: 7px;
+   box-shadow: 3px 3px 2px 1px rgba(95, 94, 94, 0.3);
+}
+#study article:hover {
+   box-shadow: 0 0 3px 2px rgb(4, 4, 94);
+}
+#study .img {
+   display: flex;
+   justify-content: center;
+}
+#study img {
+   width: 180px;
+   height: auto;
+}
+#study h1 {
+   text-shadow: 2px 3px 7px rgb(4, 4, 94);
+}
+#study .date, #study .degree, #study .img {
+   padding: 7px;
+}
+
+/* Habilidades */
+#habilities {
+   background-color: rgb(4, 4, 94);
+   color: white;
+}
+#habilities .container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+#habilities article {
+   margin: 15px;
+   text-align: center;
+   max-width: 220px;
+   padding: 15px;
+   background-color: rgb(6, 6, 54);
+   border-radius: 7px;
+}
+#habilities article:hover {
+   background-color: aquamarine;
+   color: black;
+}
+#habilities article img {
+   width: 170px;
+   height: 170px;
+   margin-bottom: 15px;
+}
+
+/* Contacto */
+#contact {
+   width: 100%;
+   padding-left: 10%;
+   padding-right: 10%;
+   text-align: center;
+}
+#contact .item {
+   display: flex;
+   flex-wrap: wrap;
+}
+#contact > article:first-child {
+   margin-bottom: 30px;
+}
+#contact form [name] {
+   display: block;
+   width: 100%;
+   height: 60px;
+   border: none;
+   border-bottom: 1px solid black;
+   background-color: rgb(201, 201, 201);
+   padding: 7px;
+   margin-bottom: 15px;
+}
+#contact form [name]:hover {
+   border: 1px solid black;
+}
+#contact form textarea[name] {
+   height: 130px;
+}
+#button input {
+   display: block;
+   width: 150px;
+   height: 40px;
+   background-color: rgb(201, 201, 201);
+   color: black;
+   border: 1px solid rgb(4, 4, 94);
+   border-radius: 5px;
+   margin: 0 auto;
+}
+#button input:hover {
+   background-color: rgb(4, 4, 94);
+   color: white;
+}
+
+/* Pie de página */
+footer {
+   width: 100%;
+   padding: 40px 0;
+   background-color: rgb(4, 4, 94);
+   color: white;
+   text-align: center;
+   font-size: 0.9em;
+   z-index: 1;
+}
+
+/* Responsivo para tabletas */
+@media screen and (min-width: 720px) {
+   header label {
+      display: none;
+   }
+   .menu {
+      position: static;
+      width: auto;
+      height: auto;
+      transform: translateX(0%);
+      float: right;
+      display: flex;
+   }
+   #welcome {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   #text-name {
+      font-size: 2.4em;
+   }
+   #text-welcome {
+      font-size: 1.8em;
+   }
+   #about img {
+      display: block;
+      max-width: 70%;
+      margin: 0 auto;
+   }
+   #join {
+      display: flex;
+   }
+   #join > div {
+      width: 45%;
+   }
+   #join > div:first-child {
+      margin-right: 10%;
+   }
+}
+
+/*Resposivo para escritorio */
+@media screen and (min-width: 1024px) {
+   #text-name {
+      font-size: 2.8em;
+   }
+   #text-welcome {
+      font-size: 2.5em;
+   }
+   #about article {
+      display: flex;
+      align-items: center;
+   }
+   #about p {
+      width: 75%;
+      padding-right: 12%;
+      margin: 0;
+   }
+   #about img {
+      max-width: 35%;
+      height: auto;
+   }
+   #study article {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+   }
+   #study .date {
+      width: 35%;
+   }
+   #study .degree {
+      width: 35%;
+   }
+   #study .img {
+      width: 30%;
+   }
+   #contact {
+      display: flex;
+   }
+   #contact > article {
+      width: 50%;
+      margin-bottom: 0;
+   }
+}

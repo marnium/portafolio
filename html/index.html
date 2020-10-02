@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es" style="scroll-behavior: smooth;">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="../css/style.css" />
+   <title>Martín Monjaraz Almaraz</title>
+   <script>
+      function ocultar() {
+         document.getElementById("check").checked = 0;
+      }
+   </script>
+</head>
+<body>
+   <header>
+      <p id="autor">Martín Monjaraz Almaraz</p>
+      <input type="checkbox" id="check" />
+      <label for="check"><img src="../img/icon-bars.svg" alt="Menu"></label>
+      <nav class="menu">
+         <a onclick="ocultar();" href="#inicio">Inicio</a>
+         <a onclick="ocultar();" href="#about">Sobre mí</a>
+         <a onclick="ocultar();" href="#study">Educación</a>
+         <a onclick="ocultar();" href="#habilities">Habilidades</a>
+         <a onclick="ocultar();" href="#contact">Contacto</a>
+      </nav>
+   </header>
+   <main>
+      <section id="inicio">
+         <img id="img-inicio" src="../img/inicio.jpg" alt="Escritorio" />
+         <article id="welcome">
+            <p id="text-welcome">!Hola¡ Soy</p>
+            <p id="text-name">Martín Monjaraz Almaraz</p>
+            <div class="list-icon">
+               <a href="https://github.com/marnium"><img src="../img/icon-github.svg" alt="GitHub" class="icon" /></a>
+               <a href="#inicio"><img src="../img/icon-facebook.svg" alt="Facebook" class="icon"/></a>
+            </div>
+         </article>
+      </section>
+      <section id="about">
+         <h1>Sobre Mí</h1>
+         <h2>Mi historia</h2>
+         <article class="container">
+            <p class="text">Soy Martín Monjaraz Almaraz. Actualmente me encuentro estudiando la carrera de Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Pochutla. Estoy cursando el séptimo semestre de la carrera. Mi gusto por los computadores empezó desde la edad de 12 años cuando mi hermana tuvo la oportunidad de adquirir una computadora de escritorio, que tenía un procesador Intel Pentium y 2 GB en RAM, con el que conocí este mundo tan fascinante. Rápidamente entendí como funcionaba la computadora y empecé a desarrollar mis primeros programas en el lenguaje ensamblador. Para saber más sobre mí, continúe navegando mi sitio o póngase en contacto conmigo.</p>
+            <img src="../img/about.jpg" alt="Área de trabajo" />
+         </article>
+      </section>
+      <section id="study">
+         <h1>Trayectoria Academica</h1>
+         <h2>Mis estudios</h2>
+         <div class="container">
+            <article>
+               <div class="date strong">Agosto de 204 - Julio de 2010</div>
+               <div class="degree text">Educación Primaria,Escuela Presidente Juarez</div>
+               <div class="img"><img src="../img/primaria.png" alt="Primaria"></div>
+            </article>
+            <article>
+               <div class="date strong">Agosto de 2010 - Julio de 2013</div>
+               <div class="degree text">Educación Secundaria, Escuela Secundaria Tecnica No. 10</div>
+               <div class="img"><img src="../img/secundaria.png" alt="Secundaria"></div>
+            </article>
+            <article>
+               <div class="date strong">Agosto de 2013 - Julio de 2017</div>
+               <div class="degree text">Técnico en informática, Centro de Bachillerato Tencológico Agropecuario No. 037</div>
+               <div class="img"><img src="../img/prepa.png" alt="Preparatoria"></div>
+            </article>
+         </div>
+      </section>
+      <section id="habilities">
+         <h1>Mis habilidades</h1>
+         <h2>Competencias profesionales</h2>
+         <div class="container">
+            <article>
+               <img src="../img/bash.png" alt="bash" />
+               <h2>BASH</h2>
+               <p class="text">Conocimiento básico de Bash</p>
+            </article>
+            <article>
+               <img src="../img/cpp.svg" alt="C++">
+               <h2>C++</h2>
+               <p class="text">Conocimiento del lenguaje C++</p>
+            </article>
+            <article>
+               <img src="../img/python.png" alt="Python" />
+               <h2>Python</h2>
+               <p class="text">Conocimiento del lenguaje Python, versión 3</p>
+            </article>
+            <article>
+               <img src="../img/java.png" alt="Java" />
+               <h2>Java</h2>
+               <p class="text">Conocimiento del lenguaje Java</p>
+            </article>
+         </div>
+      </section>
+      <section id="contact">
+         <article>
+            <h1>Entremos en contacto</h1>
+            <div class="item">
+               <img src="../img/icon-map.svg" alt="Dirección" class="icon" />
+               <p class="text">San Pedro Pochutla, Oaxaca</p></div>
+            <div class="item">
+               <img src="../img/icon-email.svg" alt="Email" class="icon" />
+               <p class="text">l171160144@pochuta.tecnm.mx</p>
+            </div>
+            <div class="item">
+               <img src="../img/icon-whatsapp.svg" alt="Whatsapp" class="icon" />
+               <p class="text">9581157712</p>
+            </div>
+         </article>
+         <article>
+            <form>
+               <input type="text" name="name" placeholder="Nombre" required="required" />
+               <input type="text" name="address" placeholder="Dirección" />
+               <div id="join">
+                  <div>
+                     <input type="email" name="email" placeholder="Email" required="required" />
+                  </div>
+                  <div>
+                     <input type="tel" name="tel" placeholder="Teléfono" />
+                  </div>
+               </div>
+               <textarea name="msg" placeholder="Escribe tu mensaje aquí..."></textarea>
+               <div id="button"><input type="submit" value="Enviar" /></div>
+            </form>
+         </article>
+      </section>
+   </main>
+   <footer>
+      <div class="list-icon">
+         <a href="https://github.com/marnium"><img src="../img/icon-github.svg" alt="GitHub" class="icon" /></a>
+         <a href="#inicio"><img src="../img/icon-facebook.svg" alt="Facebook" class="icon"/></a>
+      </div>
+      <p>Diseñado por Martín Monjaraz Almaraz | Octubre de 2020</p>
+   </footer>
+</body>
+</html>
