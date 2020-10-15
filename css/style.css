@@ -159,6 +159,10 @@ main .container {
    margin-bottom: 30px;
    text-align: justify;
 }
+.img {
+   width: 100%;
+   height: auto;
+}
 #about img {
    max-width: 100%;
    height: auto;
@@ -312,7 +316,7 @@ footer {
    #text-welcome {
       font-size: 1.8em;
    }
-   #about img {
+   #about .img {
       display: block;
       max-width: 70%;
       margin: 0 auto;
@@ -345,7 +349,7 @@ footer {
       padding-right: 12%;
       margin: 0;
    }
-   #about img {
+   #about .img {
       max-width: 35%;
       height: auto;
    }
