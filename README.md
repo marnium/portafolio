@@ -2,7 +2,7 @@
 
 ## Diseño de página web estática (portafolio/CV web) con elementos básicos
 
-_Este proyecto esta desarrollado con **HTML** y **CSS**; con un diseño resposivo. A continuación se muestran las capturas de pantalla de la visualización de la página web en los navegadores **Google Chrome**, **Firefox** e **Internet Explorer 11**._
+_Este proyecto está desarrollado con **HTML** y **CSS**; con un diseño receptivo. A continuación se muestran las capturas de pantalla de la visualización de la página web en los navegadores **Google Chrome**, **Firefox** e **Internet Explorer 11**._
 
 ### Google Chrome
 ![chrome](https://user-images.githubusercontent.com/53574794/96159620-7ac01480-0eda-11eb-8ea5-46b546313f6e.png)
